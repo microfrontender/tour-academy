@@ -1,2 +1,101 @@
 body
-    background-color: #fff
+    background-color: #f3f4f8
+    // font-family: 'Gotham Pro'
+    font-weight: 300
+    overflow-x: hidden
+*
+    box-sizing: border-box
+
+h2 
+    color: #1f1d1d
+    font-size: 42px
+    line-height: 28px
+    font-weight: 500
+    text-align: center
+    letter-spacing: 0.63px
+h3 
+    color: #1f1d1d
+    font-size: 25px
+    line-height: 25px
+    font-weight: 500
+    letter-spacing: 0.38px
+.wrap
+    width: 100%
+    overflow: hidden 
+.btn
+    overflow: hidden
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 270px
+    height: 83px
+    box-shadow: 0 5px 0 #ca9e3f, 0 14px 24px rgba(235, 200, 105, 0.42)
+    background-image: linear-gradient(to top, #ebad28 0%, #ebad28 14%, #fbe69d 100%) 
+    z-index: 1
+    border-radius: 42px
+    border: none
+    text-decoration: none
+    text-shadow: 0 1px 4px rgba(172, 139, 47, 0.2)
+    color: #ffffff
+    font-size: 15px
+    line-height: 15px
+    font-weight: 500
+    letter-spacing: 0.23px 
+    cursor: pointer
+    transition: all ease 0.2s
+    &::before
+        content: ''
+        position: absolute
+        top: -50%
+        right: -50%
+        bottom: -50%
+        left: -50%
+        background: linear-gradient(to bottom,rgba(229,172,142,0),rgba(255, 255, 255, 0.45) 50%,rgba(229,172,142,0))
+        transform: rotateZ(60deg) translate(-5em,7.5em)
+        opacity: 0
+        filter: alpha(opacity=0)
+        animation: sheen 3s infinite
+    &:hover
+        transform: scale(1.03,1.03)
+        // box-shadow: 0 0 0 #ddb610
+    &:active
+        
+        transform: translateY(5px) scale(1.03,1.03)
+        box-shadow: 0 0 0 #ca9e3f, 0 14px 24px rgba(235, 200, 105, 0.42)
+    span 
+        text-shadow: 0 1px 4px rgba(172, 139, 47, 0.2)
+        color: #ffffff
+        font-size: 15px
+        line-height: 15px
+        font-weight: 500
+        letter-spacing: 0.23px 
+    &_light
+        background: #f3f4f8
+        box-shadow: 0 5px 0 #c7c9d3, 0 14px 24px rgba(221, 212, 212, 0.16)
+        span 
+            color: #1f1d1d   
+
+@media (max-width: 1023px)
+    h2 
+        font-size: 36px
+        line-height: 42px !important
+    h3 
+        font-size: 22px
+        line-height: 27px !important
+
+@media (max-width: 767px)
+    h2 
+        font-size: 22px
+        line-height: 35px !important
+    h3 
+        font-size: 18px
+        line-height: 27px !important
+        
+    .btn
+        height: 75px
+        font-size: 14px
+        line-height: 14px
+        span
+            font-size: 14px
+            line-height: 14px

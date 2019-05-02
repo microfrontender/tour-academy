@@ -1,0 +1,21 @@
+section.feedback
+    .container
+        .feedback__inner
+            h2.feedback__title Запишись на бесплатный вебинар
+            .feedback__subtitle И узнай как зарабатывать на туризме, без ИП и вложений
+            .feedback__bonus 
+                span Бонусом мы вышлем тебе чек-листы:
+            form.feedback__form.form#feedback-form
+                .form__title Записаться на вебинар
+                .form__subtitle В течение 5 минут ты получишь приглашение на вебинар
+                label(for="form-name").form__label
+                    .form__icon
+                    input(type="text" placeholder="Введите Ваше имя").form__input#form-name
+                label(for="form-mail").form__label
+                    .form__icon
+                    input(type="text" placeholder="Введите Вашу почту").form__input#form-mail
+                input(type="submit" value='записаться на
+бесплатный вебинар').btn.btn_comp.form__btn
+                .form__desc Нажимая на кнопку, я соглашаюсь с условиями 
+                    |
+                    a(href="#") политики конфиденциальности
