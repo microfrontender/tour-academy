@@ -6,25 +6,33 @@ section.format
             .format__items
                 .format__item
                     .format__img
-                        img(src="#", alt="Изучаете уроки ")
-                    .format__title Изучаете уроки 
-                    .format__text в личном кабинете в любое удобное время
+                        img(src=require('../../img/format-1.png'), alt="Изучаете уроки ")
+                    .format__text
+                        span.format__name Изучаете уроки 
+                        |
+                        | в личном кабинете в любое удобное время
                 .format__item
                     .format__img
-                        img(src="#", alt="Получаете шаблоны")
-                    .format__title Получаете 
-                    .format__text шаблоны, видеоинструкции и чек-листы 
+                        img(src=require('../../img/format-2.png'), alt="Получаете шаблоны")
+                    .format__text
+                        span.format__name Получаете 
+                        |
+                        | шаблоны, видеоинструкции и чек-листы 
                 .format__item
                     .format__img
-                        img(src="#", alt="Выполняете домашние задание")
-                    .format__title Выполняете домашние задание, 
-                    .format__text получаете обратную связь
+                        img(src=require('../../img/format-3.png'), alt="Выполняете домашние задание")
+                    .format__text
+                        span.format__name Выполняете домашние задание, 
+                        |
+                        | получаете обратную связь
                 .format__item
                     .format__img
-                        img(src="#", alt="Практикуетесь")
-                    .format__title Практикуетесь, 
-                    .format__text подбирая туры для реальных туристов
-            
-            a(href="#").btn.btn_comp.format__btn 
-                span Получить бесплатный урок
-            .format__desc В течение 5 минут ты получишь доступ к перому видеоуроку
+                        img(src=require('../../img/format-4.png'), alt="Практикуетесь")
+                    .format__text
+                        span.format__name Практикуетесь, 
+                        |
+                        | подбирая туры для реальных туристов
+            .format__buttons
+                a(href="#").btn.btn_star.format__btn 
+                    span Получить бесплатный урок
+                .format__desc В течение 5 минут ты получишь доступ к перому видеоуроку

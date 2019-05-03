@@ -4,19 +4,18 @@ section.review
             h2.review__title На практике 7 из 10 наших учеников получают первый доход уже во время прохождения курса
             .review__subtitle Посмотрите на результаты тех, кто уже прошел курс «Персональный турагент» 
             .review__items
-                .review__nav
-                    .review__nav.review__nav_prev
-                    .review__nav.review__nav_next
-                .owl-carousel.review__carousel
+                .review__nav.review__nav_prev
+                .review__nav.review__nav_next
+                .owl-carousel.owl-theme.review__carousel
 
                     .review__item.r-item
                         .r-item__info
-                            .r-item__title Я полностью окупила стоимость курса за первый меясц работы...
-                            .r-item__text Курс авторский и ведет его действующий и практикующий турагент, организатор Академии ПТА, владелица турагентства и нескольких туристических проектов... 
+                            h3.r-item__title Я полностью окупила стоимость курса за первый месяц работы...
+                            p.r-item__text Курс авторский и ведет его действующий и практикующий турагент, организатор Академии ПТА, владелица турагентства и нескольких туристических проектов... 
                             a(href="#").r-item__more Читать полностью
                             .r-item__autor
                                 .r-item__img
-                                    img(src="#", alt="Алина Фатхуллина")
+                                    img(src=require('../../img/review-autor.png'), alt="Алина Фатхуллина")
                                 .r-item__name Алина Фатхуллина
                                 a(href="#").r-item__soc
                                     .r-item__icon
@@ -24,10 +23,25 @@ section.review
                         .r-item__video
                             .r-item__play
 
+                    .review__item.r-item
+                        .r-item__info
+                            h3.r-item__title Я полностью окупила стоимость курса за первый месяц работы...
+                            p.r-item__text Курс авторский и ведет его действующий и практикующий турагент, организатор Академии ПТА, владелица турагентства и нескольких туристических проектов... 
+                            a(href="#").r-item__more Читать полностью
+                            .r-item__autor
+                                .r-item__img
+                                    img(src=require('../../img/review-autor.png'), alt="Алина Фатхуллина")
+                                .r-item__name Алина Фатхуллина
+                                a(href="#").r-item__soc
+                                    .r-item__icon
+                                    span вконтакте
+                        .r-item__video
+                            .r-item__play
 
-            a(href="#").btn.btn_star.review__btn 
-                span Хочу такие же результаты
-            .review__desc В течение 5 минут ты получишь приглашение на вебинар
+            .review__buttons
+                a(href="#").btn.btn_star.review__btn 
+                    span Хочу такие же результаты
+                .review__desc В течение 5 минут ты получишь приглашение на вебинар
                         
             .review__air
             .review__cup

@@ -1,1 +1,190 @@
 .review
+    position: relative
+    padding-top: 110px
+    padding-bottom: 50px
+    background: url('../img/review-bg.png') no-repeat 50% 50%
+    background-size: cover
+    &::before
+        position: absolute
+        content: ''
+        width: 1971px
+        height: 2153px
+        background: url('../img/review-cloud.png') no-repeat 50% 50%
+        background-size: cover
+        left: 0
+        right: 0
+        top: -157px   
+        z-index: 0
+        overflow: hidden
+    &__inner
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__title
+        width: 915px
+        text-align: center
+    &__subtitle
+        margin-top: 25px
+        font-size: 18px
+        font-weight: 400
+    &__items
+        position: relative
+        width: 1235px
+        margin-top: 40px
+    &__item
+        position: relative
+        margin: 0 auto
+        padding: 125px
+        width: 1235px
+        height: 665px
+        background: url('../img/review-slider.png') no-repeat 50% 50%
+        // z-index: 100
+    
+    &__nav
+        position: absolute
+        width: 54px
+        height: 54px
+        top: 340px
+        border-radius: 50%
+        cursor: pointer
+        z-index: 100
+        &_prev
+            left: 0
+            background-image:  url('../img/left-arrow.png'), linear-gradient(to top, #fcb929 0%, #fcb929 17%, #fbe69d 100%)
+            background-repeat: no-repeat
+            background-position: 50% 50% 
+            box-shadow: 2px 2px 0 #eeae23
+        &_next
+            right: 0
+            background-image:  url('../img/right-arrow.png'), linear-gradient(to top, #fcb929 0%, #fcb929 17%, #fbe69d 100%)
+            background-repeat: no-repeat
+            background-position: 50% 50% 
+            box-shadow: -2px 2px 0 #eeae23
+    &__buttons
+        margin-top: -20px
+        position: relative
+    &__btn
+        width: 330px
+    &__desc
+        position: absolute
+        right: -315px
+        top: 73px
+        width: 232px
+        font-size: 13px
+        font-weight: 400
+        line-height: 21px
+        &::before
+            position: absolute
+            content: ''
+            width: 47px
+            height: 26px
+            left: -57px
+            top: -34px
+            background: url('../img/desc-3.png') no-repeat 50% 50%
+    &__air
+        position: absolute
+        width: 933px
+        height: 289px
+        top: -272px
+        left: -741px
+        background: url('../img/review-air.png') no-repeat 50% 50%
+    &__cup
+        position: absolute
+        width: 394px
+        height: 508px
+        top: -15px
+        right: -521px
+        background: url('../img/review-cup.png') no-repeat 50% 50%
+.r-item
+    display: flex
+    justify-content: space-between
+    &__info
+        width: 380px
+    &__title
+        font-family: 'Futura PT Demi'
+        margin-top: 25px
+        font-size: 25px
+        font-weight: 400
+        line-height: 30px
+        letter-spacing: -0.13px
+    &__text
+        margin-top: 20px
+        font-size: 16px
+        font-weight: 400
+        line-height: 26px
+        letter-spacing: 0.48px
+    &__more
+        display: inline-block
+        margin-top: 20px
+        color: #5f5f5f
+        font-size: 13px
+        font-weight: 400
+        line-height: 20px
+        text-decoration: none
+        border-bottom: 1px dashed #dbdbdb
+    &__autor
+        margin-top: 40px
+        height: 91px
+        position: relative
+        padding-left: 111px
+    &__img
+        position: absolute
+        width: 91px
+        height: 91px
+        top: 0
+        left: 0
+        border-radius: 50%
+    &__name
+        font-family: 'Futura PT Demi'
+        font-size: 18px
+        font-weight: 400
+        line-height: 27px
+        letter-spacing: -0.09px
+    &__soc
+        margin-top: 5px
+        position: relative
+        padding-left: 20px
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 171px
+        height: 55px
+        color: #1b1a1a
+        border-radius: 28px
+        box-shadow: 0 0 5px rgba(195, 195, 195, 0.29)
+        background-color: #ffffff 
+        text-decoration: none
+        span
+            font-size: 11px
+            font-weight: 700
+            line-height: 11px
+            text-transform: uppercase
+            letter-spacing: 0.88px
+    &__icon
+        position: absolute
+        top: 11px
+        left: 11px
+        width: 34px
+        height: 34px
+        border-radius: 50%
+        box-shadow: 0 0 6px rgba(177, 182, 195, 0.41)
+        background: url('../img/vk-icon.png') no-repeat 50% 50%
+        background-color: #ffffff
+    &__video
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 552px
+        height: 416px
+        background: url('../img/review-placeholder.png') no-repeat 50% 50%
+    &__play
+        position: relative
+        width: 105px
+        height: 105px
+        border-radius: 50%
+        background: url('../img/play.png') no-repeat 50% 50%
+        background-color: #ffffff
+        box-shadow: 3px 2px 0 #d1d1d1, -4px 5px 79px rgba(252, 194, 63, 0.3)
+        cursor: pointer
+        z-index: 10
