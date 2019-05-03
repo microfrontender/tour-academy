@@ -1,0 +1,85 @@
+.teach
+    margin-top: -120px
+    padding-top: 65px
+    padding-bottom: 105px
+    position: relative
+    background-color: #f7f7fb
+    z-index: 10
+    &::before
+        position: absolute
+        content: ''
+        display: block
+        height: 130px
+        width: 1960px
+        left: 50%
+        margin-left: -980px
+        top: -65px
+        border-radius: 50%
+        background-color: #f7f7fb
+    &__inner
+        display: flex
+        flex-direction: column
+        align-items: center
+        position: relative
+    &__subtitle
+        margin-top: 15px
+        width: 582px
+        font-size: 18px
+        font-weight: 400
+        text-align: center
+    &__items
+        display: flex
+        flex-wrap: wrap
+        margin-top: 70px
+    &__item
+        display: flex
+        width: 33%
+        margin-bottom: 70px
+    &__img
+        width: 170px
+        height: 125px
+        display: flex
+        align-items: flex-end
+        justify-content: flex-end
+        padding-right: 10px
+        &_1
+            padding-right: 22px
+    &__info
+        margin-top: 40px
+        width: 240px
+    &__title
+        font-weight: 500
+    &__buttons
+        position: relative
+    &__btn
+        width: 330px
+    &__desc
+        position: absolute
+        right: -315px
+        top: 73px
+        width: 232px
+        font-size: 13px
+        font-weight: 400
+        line-height: 21px
+        &::before
+            position: absolute
+            content: ''
+            width: 47px
+            height: 26px
+            left: -57px
+            top: -34px
+            background: url('../img/desc-3.png') no-repeat 50% 50%
+    &__lightning
+        position: absolute
+        width: 79px
+        height: 119px
+        top: 0
+        left: -130px
+        background: url('../img/teach-lightning.png') no-repeat 50% 50%
+    &__prize
+        position: absolute
+        width: 105px
+        height: 177px
+        top: 75px
+        right: -230px
+        background: url('../img/teach-prize.png') no-repeat 50% 50%

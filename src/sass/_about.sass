@@ -1,0 +1,86 @@
+.about
+    background: url('../img/about-bg.png') no-repeat 50% 100%
+    background-color: #fff
+    background-size: cover
+    height: 1054px
+    &__inner
+        position: relative
+        display: flex
+        flex-direction: column
+        padding-left: 590px
+    &__founder
+        position: absolute
+        left: 36px
+        top: 90px
+        width: 510px
+        height: 1140px
+        &-info
+            position: absolute
+            width: 185px
+            height: 80px
+            top: 116px
+            left: -66px
+            text-align: center
+        &-name
+            font-size: 20px
+            line-height: 21px
+            font-weight: 500
+        &-text
+            margin-top: 5px
+            font-size: 13px
+            line-height: 20px
+            letter-spacing: 0.39px  
+    &__title
+        margin-top: 180px
+    &__subtitle
+        margin-top: 20px
+        font-size: 18px
+        font-weight: 400
+        line-height: 18px
+        letter-spacing: 0.54px
+    &__quote
+        position: relative
+        margin-top: 40px
+        margin-left: 30px
+        font-weight: 400
+        color: #5b5b5b
+        &::before
+            position: absolute
+            content: ''
+            width: 17px
+            height: 13px
+            top: -7px
+            left: -30px
+            background: url('../img/quote-1.png') no-repeat 50% 50%
+        &::after
+            position: absolute
+            content: ''
+            width: 17px
+            height: 13px
+            bottom: -33px
+            right: 0
+            background: url('../img/quote-2.png') no-repeat 50% 50%
+        p+p 
+            margin-top: 35px
+    &__buttons
+        margin-top: 70px
+        position: relative
+    &__btn
+        width: 288px
+    &__desc
+        position: absolute
+        right: -65px
+        top: 24px
+        width: 232px
+        font-size: 13px
+        font-weight: 400
+        line-height: 21px
+        &::before
+            position: absolute
+            content: ''
+            width: 44px
+            height: 11px
+            left: -50px
+            top: -10px
+            background: url('../img/desc-2.png') no-repeat 50% 50%
+

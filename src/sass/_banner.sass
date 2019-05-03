@@ -1,0 +1,67 @@
+.banner
+    position: relative
+    overflow: hidden
+    background: url('../img/banner-bg.png') no-repeat 50% 0
+    background-size: cover
+    height: 900px
+    
+    &__inner
+        position: relative
+        display: flex
+        flex-direction: column
+        height: 900px
+        z-index: 10
+
+    &__title
+        margin-top: 260px
+        width: 670px
+        span 
+            display: inline-block
+            padding: 0 10px
+            margin-left: -10px
+            line-height: 48px
+            border-radius: 23px
+            background-color: #fbcb58
+    &__subtitle
+        max-width: 580px
+        margin-top: 25px
+        font-style: 18px
+        font-weight: 400
+        line-height: 27px
+        letter-spacing: 0.54px
+    &__btn
+        margin-top: 35px
+        width: 330px
+    &__desc
+        margin-top: 35px
+        margin-left: 123px
+        position: relative
+        width: 232px
+        font-size: 13px
+        font-weight: 400
+        line-height: 21px
+        &::before
+            position: absolute
+            content: ''
+            width: 17px
+            height: 44px
+            left: -30px
+            top: -23px
+            background: url('../img/desc-1.png') no-repeat 50% 50%
+    &__woman
+        position: absolute
+        right: -41px
+        bottom: 0
+        width: 789px
+        height: 674px
+        background: url('../img/banner-woman.png') no-repeat 50% 50%
+        z-index: -1
+        &::after
+            position: absolute
+            content: ''
+            bottom: -938px
+            right: -340px
+            width: 2074px
+            height: 1192px
+            background: url('../img/cloud-1.png') no-repeat 50% 50%
+            z-index: 1

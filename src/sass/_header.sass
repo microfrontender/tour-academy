@@ -1,2 +1,44 @@
 .header
-   height: 50vh
+    position: absolute
+    left: 0
+    right: 0
+    top: 40px
+    z-index: 100
+    &__inner
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__logo
+        display: flex
+        align-items: center
+        height: 49px
+        width: 246px
+        img 
+            width: 49px
+            height: 49px
+        span 
+            font-size: 15px
+            font-style: italic
+            line-height: 23px
+            letter-spacing: 0.82px 
+    &__burger
+        width: 32px
+        height: 29px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        cursor: pointer
+        span 
+            width: 32px
+            height: 7px
+            box-shadow: 0 1px 7px rgba(0, 0, 0, 0.27)
+            border-radius: 3px
+            background-color: #f4f4f9
+    &__nav
+        display: none
+
+.nav
+    top: 0
+    right: 0
+    position: fixed
+    background: #ffffff
