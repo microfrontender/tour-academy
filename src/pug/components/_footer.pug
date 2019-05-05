@@ -2,16 +2,17 @@ footer.footer
     .container
         .footer__inner
             .footer__logo
-                img(src="#", alt="Академия персональных турагентов")
+                img(src=require('../../img/logo.png'), alt="Академия персональных турагентов")
                 span Академия персональных турагентов
-            a(href="#").footer__call 
+            a(href="#popup-form").footer__call 
+                .footer__icon
                 span Позвоните мне
             .footer__phone
-                .footer__number
-                span Телефон
-                span WhatsApp
-                span Telegram
+                .footer__number 8 (800) 978-85-85
+                a(href="#") Телефон
+                a(href="#") WhatsApp
+                a(href="#") Telegram
             .footer__entity ИП Голов А.Л. ИНН 525909785640
-            .footer__polit Политика конфиденциальности
+            a(href="#").footer__polit.conf Политика конфиденциальности
             .footer__inst 
                 a(href="#").footer__link Открыть instagram

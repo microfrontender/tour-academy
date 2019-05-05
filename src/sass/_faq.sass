@@ -1,1 +1,94 @@
 .faq
+    position: relative
+    padding-top: 77px
+    padding-bottom: 114px
+    background-image: linear-gradient(-265deg, #f7f7fb 0%, #ffffff 52%, #f7f7fb 100%)
+    &__img
+        position: absolute
+        width: 404px
+        height: 302px
+        left: 50%
+        bottom: 80px
+        background: url('../img/faq-img.png') no-repeat 50% 50%
+        margin-left: 200px
+    &__inner
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__items
+        width: 100%
+        max-height: 770px
+        margin-top: 50px
+        margin-bottom: 100px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &__item    
+        position: relative
+        margin-bottom: 20px
+        width: 575px
+        border-radius: 12px
+        background-color: #f7f7fb
+        &:last-child
+            margin-bottom: 0
+    &__head
+        display: flex
+        align-items: center
+        height: 111px
+        cursor: pointer
+        position: relative
+    &__ask
+        padding-left: 45px
+        width: 400px
+        font-size: 18px
+        font-weight: 500
+        line-height: 27px
+        letter-spacing: -0.09px
+    &__button
+        position: absolute
+        width: 54px
+        height: 54px
+        top: 27px
+        right: 27px
+        background-image:  url('../img/faq-arrow.png'), linear-gradient(to top, #fcb929 0%, #fcb929 17%, #fbe69d 100%)
+        background-repeat: no-repeat
+        background-position: 50% 50% 
+        box-shadow: -2px 2px 0 #eeae23
+        border-radius: 50%
+        cursor: pointer
+        // transition: all ease 0.3s
+        &_active
+            transform: rotate(90deg)
+            background-image:  url('../img/faq-arrow.png'), linear-gradient(to left, #fcb929 0%, #fcb929 17%, #fbe69d 100%)
+            box-shadow: 2px 2px 0 #eeae23
+    &__body
+        overflow: hidden
+        height: 0
+        transition: all ease 0.3s
+        &_active
+            height: auto
+    &__question
+        padding: 0 125px 30px 45px
+        font-size: 16px
+        font-weight: 400
+        line-height: 26px
+        letter-spacing: 0.48px
+    &__subtitle
+        position: relative
+        margin-top: 19px
+        font-size: 16px
+        font-weight: 400
+        line-height: 26px
+        letter-spacing: 0.48px
+        &::before
+            position: absolute
+            content: ''
+            width: 16px
+            height: 23px
+            left: 50%
+            margin-left: -8px
+            bottom: -36px
+            background: url('../img/faq-arrow-down.png') no-repeat 50% 50%
+    &__btn
+        margin-top: 52px
+        width: 279px

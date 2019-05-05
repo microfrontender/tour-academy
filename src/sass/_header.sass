@@ -12,15 +12,18 @@
         display: flex
         align-items: center
         height: 49px
-        width: 246px
+        width: 275px
         img 
             width: 49px
             height: 49px
         span 
+            margin-left: 15px
+            color: #030303
+            font-family: 'PT Serif'
             font-size: 15px
             font-style: italic
             line-height: 23px
-            letter-spacing: 0.82px 
+            letter-spacing: 0.82px
     &__burger
         width: 32px
         height: 29px
@@ -35,10 +38,52 @@
             border-radius: 3px
             background-color: #f4f4f9
     &__nav
-        display: none
+        transform: translate(100%)
+        transition: transform ease 0.3s
+        &_active
+            transform: translate(0)
 
 .nav
+    display: flex
+    flex-direction: column
+    bottom: 0
     top: 0
     right: 0
     position: fixed
     background: #ffffff
+    width: 400px
+    padding: 100px 50px
+    &__close
+        position: absolute
+        top: 40px
+        right: 30px
+        width: 32px
+        height: 32px
+        background: url('../img/close.svg') no-repeat 50% 50%
+        background-size: contain
+        cursor: pointer
+    &__items
+        margin-top: 30px
+    &__item
+        padding-left: 20px
+        margin-bottom: 10px
+    &__link
+        text-decoration: none
+    &__address
+        margin-top: 20px
+        font-size: 14px
+    &__phone
+        margin-top: 20px
+        font-family: 'Futura PT Demi'
+        color: #1b1a1a
+        font-size: 10px
+        font-weight: 400
+        line-height: 30px
+        letter-spacing: -0.15px
+        text-decoration: none
+    &__cons
+        margin-top: 14px
+        color: #72727d
+        font-size: 13px
+        line-height: 14px
+        text-decoration: none

@@ -1,1 +1,126 @@
 .feedback
+    padding-top: 97px
+    padding-bottom: 60px
+    height: 800px
+    &__inner
+        position: relative
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column
+    &__title
+        margin-top: 37px
+        width: 700px
+    &__subtitle
+        font-size: 18px
+        line-height: 18px
+        margin-top: 18px
+        width: 700px
+    &__bonus
+        position: relative
+        width: 700px
+        margin-top: 49px
+        margin-bottom: auto
+        span 
+            display: inline-block
+            width: 210px
+            font-size: 18px
+            font-weight: 400
+            line-height: 28px
+            letter-spacing: 0.52px 
+        img
+            position: absolute
+            right: 61px
+            top: 40px
+    &__form
+        position: absolute
+        width: 464px
+        height: 645px
+        top: 0
+        right: -10px
+        box-shadow: 0 3px 18px rgba(137, 137, 152, 0.21)
+        border-radius: 20px
+        background-color: #f7f7fb
+        &::before
+            position: absolute
+            content: ''
+            width: 442px
+            height: 655px
+            left: 10px
+            border-radius: 20px
+            background-color: #f7f7fb
+            top: -10px
+            z-index: -1
+        &::after
+            position: absolute
+            content: ''
+            width: 299px
+            height: 271px
+            right: -194px
+            top: 131px
+            background: url('../img/form-img.png') no-repeat 50% 50%
+            z-index: -1
+
+.form
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 70px 70px
+    &__title
+        text-align: center
+        font-family: 'Futura PT Demi'
+        font-size: 30px
+        font-weight: 400
+        line-height: 30px
+        letter-spacing: -0.15px
+    &__subtitle
+        margin-top: 10px
+        text-align: center
+        font-size: 16px
+        font-weight: 400
+        line-height: 24px
+        letter-spacing: 0.48px
+    &__body
+        margin-top: 37px
+    &__label
+        display: flex
+        position: relative
+    &__input
+        margin-bottom: 15px
+        padding-left: 90px
+        width: 330px
+        height: 75px
+        box-shadow: inset -1px 2px 12px 1px rgba(58, 62, 64, 0.11)
+        background-color: #ffffff
+        border-radius: 37px
+        border: none
+        color: #72727d
+        font-size: 16px
+        font-weight: 400
+        line-height: 16px
+        outline: unset
+    &__icon
+        display: block
+        position: absolute
+        top: 25px
+        left: 0
+        width: 70px
+        height: 24px
+        border-right: 1px solid #ebebef
+        &_1
+            background: url('../img/from-icon-1.png') no-repeat 77% 50%
+        &_2
+            background: url('../img/from-icon-2.png') no-repeat 77% 50%
+    &__btn
+        margin-top: 10px
+        width: 292px
+    &__desc
+        color: #72727d
+        margin-top: 37px
+        text-align: center
+        font-weight: 300
+        font-size: 13px
+        line-height: 20px
+        a 
+            color: #72727d
+            text-decoration: none
+            border-bottom: 1px solid #ebebef

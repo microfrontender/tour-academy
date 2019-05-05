@@ -5,8 +5,11 @@ body
     color: #1b1a1a
     font-size: 16px
     line-height: 23px
+    font-weight: 400
     letter-spacing: 0.48px
     overflow-x: hidden
+.body-hide
+    overflow: hidden
 *
     box-sizing: border-box
 h1
@@ -37,15 +40,16 @@ h2
     border-radius: 42px
     border: none
     text-decoration: none
+    text-align: center
     text-shadow: 0 1px 4px rgba(172, 139, 47, 0.2)
     color: #3b2f29
     font-size: 11px
     line-height: 20px
     font-weight: 700
     letter-spacing: 0.88px
+    text-transform: uppercase
     cursor: pointer
     transition: all ease 0.2s
-    text-transform: uppercase
     
     &:hover
         transform: scale(1.03,1.03)
@@ -90,6 +94,28 @@ h2
             top: -20px
             right: -55px
             background: url('../img/comp.png') no-repeat 50% 50%
+            z-index: 10
+    &_ask
+        span 
+           margin-right: 20px
+        &::after
+            display: flex
+            align-items: center
+            justify-content: center
+            position: absolute
+            content: '?'
+            color: #fbc850
+            font-size: 33px
+            font-weight: 700
+            line-height: 30px
+            letter-spacing: -0.17px
+            width: 45px
+            height: 45px
+            top: 15px
+            right: 23px
+            box-shadow: -2px 2px 3px rgba(204, 208, 216, 0.41)
+            background-color: #ffffff
+            border-radius: 50%
             z-index: 10
 
 @media (max-width: 1023px)
