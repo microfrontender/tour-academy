@@ -89,6 +89,7 @@
         top: -263px
         left: -746px
         background: url('../img/review-air.png') no-repeat 50% 50%
+        background-size: contain
     &__cup
         position: absolute
         width: 394px
@@ -96,6 +97,7 @@
         top: -15px
         right: -521px
         background: url('../img/review-cup.png') no-repeat 50% 50%
+        background-size: contain
 .r-item
     display: flex
     justify-content: space-between
@@ -133,6 +135,7 @@
         width: 552px
         height: 416px
         background: url('../img/review-placeholder.png') no-repeat 50% 50%
+        background-size: contain
     &__play
         position: relative
         width: 105px
@@ -190,3 +193,105 @@
         box-shadow: 0 0 6px rgba(177, 182, 195, 0.41)
         background: url('../img/vk-icon.png') no-repeat 50% 50%
         background-color: #ffffff
+
+@media (max-width: 767px)
+    .review
+        padding-top: 106px
+        padding-bottom: 54px
+        &::before
+            top: auto
+            height: 2265px
+        &__air
+            width: 379px
+            height: 117px
+            top: -161px
+            left: -176px
+        &__cup
+            width: 127px
+            height: 179px
+            right: -92px
+            top: 27px
+        &__title
+            width: 100%
+            text-align: left
+        &__subtitle
+            margin-top: 17px
+            font-size: 15px
+            line-height: 23px
+            letter-spacing: 0.45px
+        &__items
+            width: 430px
+            margin-top: 10px
+        &__item
+            width: 430px
+            height: 789px
+            background: url('../img/review-slider-mobile.png') no-repeat 50% 50%
+            padding: 83px 60px 0
+        &__buttons
+            margin-top: 0
+            display: flex
+            flex-direction: column
+        &__btn
+            width: 263px
+        &__desc
+            margin-top: 35px
+            position: relative
+            right: auto
+            margin-left: 48px
+            top: auto
+            letter-spacing: 0px
+            &::before
+                width: 17px
+                height: 44px
+                left: -30px
+                top: -23px
+                background: url('../img/desc-1.png') no-repeat 50% 50%
+    .r-item
+        flex-direction: column
+        align-items: center
+        justify-content: flex-start
+        &__info
+            margin-top: 12px
+            order: 2
+            width: 270px  
+        &__title
+            font-size: 18px
+            line-height: 26px
+            letter-spacing: -0.09px
+        &__text
+            margin-top: 6px
+            font-size: 13px
+            line-height: 21px
+            letter-spacing: 0.44px
+        &__more
+            margin-top: 12px
+            font-size: 13px
+            line-height: 13px
+        &__video
+            width: 316px
+            height: 239px
+        &__play
+            width: 61px
+            height: 61px
+            box-shadow: none
+    .autor
+        height: 84px
+        padding-left: 104px
+        &__img
+            width: 84px
+            height: 84px
+        &__name
+            font-size: 17px
+            line-height: 17px
+            letter-spacing: -0.09px
+        &__soc
+            margin-top: 10px
+            width: 159px
+            height: 50px
+            span 
+                font-size: 10px
+                line-height: 10px
+        &__icon
+            width: 32px
+            height: 32px
+            top: 8px

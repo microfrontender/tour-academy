@@ -22,6 +22,7 @@
         margin-left: -391px
         background: url('../img/academy.png') no-repeat 50% 50%
         z-index: 10
+        background-size: contain
     &__inner
         position: relative
         display: flex
@@ -128,3 +129,70 @@
             font-size: 20px
             font-weight: 700
             letter-spacing: 0.6px
+
+@media (max-width: 767px)
+    .tariff
+        height: auto
+        padding: 60px 0
+        background: url('../img/tariff-bg-mobile.png') no-repeat 50% 0
+        background-size: cover
+        &::before
+            display: none
+        &__academy
+            width: 335px
+            height: 36px
+            margin-left: -168px
+            top: 7px
+        &__title
+            text-align: center
+        &__items
+            margin-top: 30px
+            flex-direction: column
+            align-items: center
+        &__item
+            margin-bottom: 25px
+            width: 320px
+            height: auto
+            padding: 40px 28px 48px 22px
+        &__name
+            font-size: 25px
+            line-height: 25px
+            letter-spacing: -0.15px 
+        &__options
+            margin-top: 21px
+            margin-left: 10px
+            width: 280px
+            height: auto
+            li 
+                padding-left: 33px
+                margin-bottom: 16px 
+                font-size: 15px
+                line-height: 23px
+                letter-spacing: 0.53px 
+                &::before
+                    width: 23px
+                    height: 27px
+        &__more
+            margin-top: 36px
+            text-align: center 
+            font-size: 13px
+            line-height: 13px
+        &__price
+            font-size: 20px
+            line-height: 20px
+            &_old
+                margin-top: 39px
+                font-size: 13px
+                line-height: 13px
+        &__btn
+            margin-top: 15px
+            width: 178px
+            height: 58px
+        &__left
+            margin-top: 26px
+            width: 180px
+            font-size: 14px
+            line-height: 23px
+            span 
+                font-size: 18px
+                line-height: 27px

@@ -70,3 +70,71 @@
             left: -57px
             top: -34px
             background: url('../img/desc-3.png') no-repeat 50% 50%
+
+@media (max-width: 767px)
+    .format
+        padding: 60px 0 100px
+        &__title
+            text-align: center
+        &__subtitle
+            margin-top: 8px
+            width: 204px
+            text-align: center
+            font-size: 15px
+            line-height: 23px
+            letter-spacing: 0.45px
+        &__items
+            margin-top: 0
+            flex-direction: column
+            align-items: center
+        &__item
+            margin-bottom: 62px
+            width: 100%
+            &+.format__item
+                &::before
+                    transform: rotate(90deg)
+                    top: -7px
+                    left: 50%
+                    margin-left: -33px
+            &:last-child
+                margin-bottom: 0
+            &_2
+                margin-bottom: 113px
+                .format__text
+                    margin-top: -18px
+            &_3
+                margin-bottom: 97px
+                &::before
+                    top: -55px !important
+                .format__text
+                    margin-top: -30px
+            &_4
+                &::before
+                    top: -43px !important
+        &__text
+            margin-top: -10px
+            font-size: 15px
+            font-weight: 400
+            line-height: 23px
+            margin-right: 0
+            width: 193px
+        &__buttons
+            margin-top: 40px
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__btn
+            width: 263px
+        &__desc
+            margin-top: 44px
+            position: relative
+            right: auto
+            margin-left: 48px
+            top: auto
+            letter-spacing: 0px
+            &::before
+                width: 17px
+                height: 44px
+                left: -30px
+                top: -23px
+                background: url('../img/desc-1.png') no-repeat 50% 50%

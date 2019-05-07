@@ -7,7 +7,6 @@
         position: relative
         display: flex
         flex-wrap: wrap
-        aic
         justify-content: space-between
     &__logo
         display: flex
@@ -118,3 +117,60 @@
         text-transform: uppercase
         letter-spacing: 1.1px
         text-decoration: none
+    &__right
+        display: none
+    &__soc
+        display: none
+
+@media (max-width: 767px)
+    .footer
+        padding: 40px 0
+        height: auto
+        background: url('../img/footer-bg-mobile.png') no-repeat 50% 50%
+        background-size: cover
+        &__inner
+            flex-direction: column
+        &__call
+            display: none
+        &__entity
+            display: none
+        &__phone
+            display: none
+        &__polit
+            margin-top: 17px
+            margin-left: 0
+            font-size: 13px
+            font-weight: 300
+            line-height: 20px
+            border-bottom: 1px solid #b3b8c3
+        &__inst
+            display: none
+        &__right
+            margin-left: 75px
+            display: block
+            color: #72727d
+            font-size: 11px
+            font-weight: 300
+            line-height: 20px
+        &__soc
+            margin-top: 25px
+            display: flex
+            width: 212px
+            align-items: center
+            justify-content: space-between
+            span 
+                font-size: 13px
+                line-height: 13px
+                font-weight: 300
+            &-link 
+                display: flex
+                width: 40px
+                height: 40px
+                
+                border-radius: 50%
+                &_inst
+                    background: url('../img/footer-icon-inst.png') no-repeat 50% 50%
+                    background-color: #ffffff
+                &_vk
+                    background: url('../img/footer-icon-vk.png') no-repeat 50% 50%
+                    background-color: #ffffff

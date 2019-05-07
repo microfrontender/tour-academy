@@ -118,26 +118,76 @@ h2
             border-radius: 50%
             z-index: 10
 
+@media (max-width: 1279px)
+    h2
+        font-size: 40px
+        line-height: 40px
 @media (max-width: 1023px)
-    h2 
+    h1
         font-size: 36px
-        line-height: 42px !important
+        line-height: 40px
+    h2 
+        font-size: 30px
+        line-height: 35px
     h3 
         font-size: 22px
-        line-height: 27px !important
 
 @media (max-width: 767px)
+    body
+        font-size: 13px
+        line-height: 21px
+        letter-spacing: 0.44px
+    h1
+        font-size: 26px
+        font-weight: 400
+        line-height: 26px
+        letter-spacing: -0.13px
     h2 
-        font-size: 22px
-        line-height: 35px !important
+        font-size: 26px
+        font-weight: 400
+        line-height: 31px
+        letter-spacing: -0.13px
     h3 
         font-size: 18px
         line-height: 27px !important
         
     .btn
-        height: 75px
-        font-size: 14px
-        line-height: 14px
+        height: 66px
+        font-size: 9px
+        line-height: 19px
         span
-            font-size: 14px
-            line-height: 14px
+            font-size: 9px
+            line-height: 9px
+            line-height: 19px
+        &_star
+            padding-right: 30px
+            &::after
+                top: 15px
+                right: 19px
+                width: 35px
+                height: 35px
+                box-shadow: 0 3px 3px rgba(204, 208, 216, 0.41)
+                background: url('../img/star.png') no-repeat 50% 50%
+                background-color: #ffffff
+                background-size: 50%
+        &_comp
+            span 
+                width: 140px
+            &::after
+                width: 86px
+                height: 78px
+                top: -16px
+                right: -54px
+                background: url('../img/comp.png') no-repeat 50% 50%
+                background-size: contain
+        &_ask
+            padding-right: 10px
+            span 
+                margin-right: 0
+            &::after
+                font-size: 24px
+                line-height: 24px
+                width: 35px
+                height: 35px
+                right: 19px
+                box-shadow: 0 3px 3px rgba(204, 208, 216, 0.41)

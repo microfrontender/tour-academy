@@ -20,6 +20,7 @@
         width: 652px
         height: 652px
         background: url('../img/skills-woman.png') no-repeat 50% 50%
+        background-size: contain
     &__item
         
         position: absolute
@@ -54,7 +55,7 @@
         margin-left: 10px
         width: 222px
     &__name
-        font-weight: 500    
+        font-weight: 600    
     &__buttons
         margin-top: -23px
         position: relative
@@ -77,3 +78,53 @@
             left: -59px
             top: 9px
             background: url('../img/desc-2.png') no-repeat 50% 50%
+
+@media (max-width: 767px)
+    .skills
+        padding-top: 5px
+        &__title
+            text-align: center
+        &__items
+            justify-content: flex-start
+            height: auto
+            margin-top: 40px
+        &__item
+            position: static
+            flex-direction: column
+            margin-bottom: 0
+            &_5
+                .skills__info
+                    margin-top: -46px
+            &:last-child
+                margin-bottom: 0
+        &__img
+            width: 100%
+        &__woman
+            margin-top: 20px
+            width: 335px
+            height: 335px
+            order: 2
+        &__info
+            font-size: 15px
+            font-weight: 400
+            line-height: 23px
+            margin-left: 0
+            width: 181px
+            margin-top: -15px
+        &__buttons
+            display: flex
+            flex-direction: column
+        &__btn
+            width: 248px
+        &__desc
+            margin-top: 40px
+            position: relative
+            top: auto
+            right: -25px
+            letter-spacing: 0px
+            &::before
+                width: 17px
+                height: 44px
+                left: -30px
+                top: -23px
+                background: url('../img/desc-1.png') no-repeat 50% 50%

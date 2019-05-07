@@ -52,7 +52,7 @@
         margin-top: 40px
         width: 240px
     &__title
-        font-weight: 500
+        font-weight: 600
     &__buttons
         position: relative
         margin-top: 6px
@@ -88,3 +88,79 @@
         top: 75px
         right: -230px
         background: url('../img/teach-prize.png') no-repeat 50% 50%
+
+@media (max-width: 767px)
+    .teach
+        margin-top: 0
+        padding-bottom: 60px
+        &::before
+            width: 780px
+            height: 80px
+            top: -13px
+            margin-left: -390px
+        &__inner
+            align-items: flex-start
+        &__subtitle
+            text-align: left
+            margin-top: 10px
+            width: 245px
+            font-size: 15px
+            font-weight: 400
+            line-height: 23px
+            letter-spacing: 0.45px
+        &__items
+            width: 100%
+            margin-top: 3px
+            flex-direction: column
+            align-items: flex-start
+        &__item
+            width: 320px
+            margin-bottom: 30px
+            &:last-child
+                margin-bottom: 0
+        &__img
+            width: 124px
+            height: 113px
+            margin-left: -30px
+            padding-right: 15px
+            img 
+                height: 96px
+            &_3 
+                img 
+                    height: 104px
+            &_4 
+                img 
+                    height: 113px
+            &_5 
+                img 
+                    height: 82px
+        &__info
+            font-size: 15px
+            width: 210px
+        &__buttons
+            display: flex
+            flex-direction: column
+            margin-top: 77px
+        &__btn
+            width: 263px
+        &__desc
+            margin-top: 35px
+            position: relative
+            right: auto
+            margin-left: 48px
+            top: auto
+            letter-spacing: 0px
+            &::before
+                width: 17px
+                height: 44px
+                left: -30px
+                top: -23px
+                background: url('../img/desc-1.png') no-repeat 50% 50%
+        &__lightning
+            display: none
+        &__prize
+            width: 69px
+            height: 117px
+            background-size: contain
+            top: 35px
+            right: -41px 

@@ -3,6 +3,7 @@
     background-color: #fff
     background-size: cover
     height: 1054px
+    padding-top: 180px
     &__inner
         position: relative
         display: flex
@@ -30,8 +31,6 @@
             font-size: 13px
             line-height: 20px
             letter-spacing: 0.39px  
-    &__title
-        margin-top: 180px
     &__subtitle
         margin-top: 22px
         font-size: 18px
@@ -84,4 +83,136 @@
             left: -60px
             top: -15px
             background: url('../img/desc-2.png') no-repeat 50% 50%
-
+@media (max-width: 1279px)
+    .about
+        &__inner
+            padding-left: 415px
+        &__founder
+            left: 12px
+            top: 117px
+            img
+                height: 930px
+            &-info 
+                top: 54px
+                left: -66px
+        &__buttons
+            display: flex
+            flex-direction: column
+        &__desc
+            margin-top: 37px
+            top: auto
+            position: relative
+            margin-left: 60px
+            right: auto
+            letter-spacing: 0px
+            &::before
+                width: 17px
+                height: 44px
+                left: -30px
+                top: -23px
+                background: url('../img/desc-1.png') no-repeat 50% 50%
+@media (max-width: 1023px)
+    .about
+        padding-top: 106px
+        &__inner
+            padding-left: 0
+            max-width: 400px
+        &__founder
+            left: 422px
+            top: 407px
+            img 
+                height: 737px
+            &-info
+                left: -96px
+                top: 97px
+            &-text 
+                font-size: 12px
+                font-weight: 400
+                line-height: 18px
+                letter-spacing: 0.47px
+        &__quote
+            margin-top: 30px
+            p+p 
+                margin-top: 22px
+        &__buttons
+            margin-top: 50px    
+@media (max-width: 767px)
+    .about
+        background: url('../img/about-bg-mobile.png') no-repeat 50% 50%
+        background-size: cover
+        padding-top: 77px
+        height: 1091px
+        &__inner
+            padding-left: 0
+        &__founder
+            top: auto
+            left: auto
+            bottom: -470px
+            right: -53px
+            width: 203px
+            height: 452px
+            img 
+                display: none
+                width: 203px
+                height: 452px
+            &-name 
+                font-size: 16px
+                font-weight: 600
+                line-height: 16.1px
+            &-img
+                width: 203px
+                height: 452px
+                background: url('../img/about-founder-mobile.png') no-repeat 50% 50%
+                background-size: contain
+            &-info
+                left: -141px
+                top: 77px
+            &-text 
+                font-size: 12px
+                font-weight: 400
+                line-height: 18px
+                letter-spacing: 0.47px
+        &__subtitle
+            margin-top: 13px
+            font-size: 15px
+            line-height: 15px
+            letter-spacing: 0.3px
+        &__quote
+            margin-top: 43px
+            margin-left: 20px
+            width: 210px
+            font-size: 13px
+            line-height: 21px
+            letter-spacing: 0.5px
+            &::before
+                width: 13px
+                height: 10px
+                top: -14px
+                left: -21px
+                background-size: contain
+            &::after
+                width: 13px
+                height: 10px
+                bottom: 0
+                right: -35px
+                background-size: contain
+        &__buttons
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-top: 46px
+        &__btn
+            width: 248px
+        &__desc
+            margin-top: 37px
+            top: auto
+            position: relative
+            margin-right: -60px
+            right: auto
+            letter-spacing: 0px
+            &::before
+                width: 17px
+                height: 44px
+                left: -30px
+                top: -23px
+                background: url('../img/desc-1.png') no-repeat 50% 50%

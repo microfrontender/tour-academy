@@ -31,12 +31,13 @@
         flex-direction: column
         justify-content: space-between
         cursor: pointer
+        
         span 
             width: 32px
             height: 7px
-            box-shadow: 0 1px 7px rgba(0, 0, 0, 0.27)
             border-radius: 3px
             background-color: #f4f4f9
+            box-shadow: 0 1px 7px rgba(0, 0, 0, 0.27)
     &__nav
         transform: translate(100%)
         transition: transform ease 0.3s
@@ -69,6 +70,8 @@
         margin-bottom: 10px
     &__link
         text-decoration: none
+        color: #1b1a1a
+        font-size: 16px
     &__address
         margin-top: 20px
         font-size: 14px
@@ -76,7 +79,7 @@
         margin-top: 20px
         font-family: 'Futura PT Demi'
         color: #1b1a1a
-        font-size: 10px
+        font-size: 36px
         font-weight: 400
         line-height: 30px
         letter-spacing: -0.15px
@@ -87,3 +90,41 @@
         font-size: 13px
         line-height: 14px
         text-decoration: none
+
+@media (max-width: 767px)
+    .header
+        top: 25px
+        &__inner
+            align-items: flex-start
+        &__logo
+            height: 36px
+            img 
+                width: 36px
+                height: 36px
+            span 
+                margin-left: 10px
+                font-size: 11px
+                line-height: 16.69px
+                font-weight: 600
+                width: 200px
+        &__burger
+            width: 27px
+            height: 23px
+            
+            span 
+                box-shadow: none
+                width: 27px
+                height: 5px
+                border-radius: 2px
+                background-image: linear-gradient(to top, #fcb929 0%, #fcb929 17%, #fbe69d 100%)  
+    .nav
+        width: 100%
+        align-items: center
+        &__close
+            top: 25px
+            width: 27px
+            height: 27px
+        &__items
+            margin-top: 20px
+        &__item
+            margin-bottom: 5px

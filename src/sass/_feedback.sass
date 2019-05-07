@@ -27,10 +27,12 @@
             font-weight: 400
             line-height: 28px
             letter-spacing: 0.52px 
-        img
-            position: absolute
-            right: 61px
-            top: 40px
+    &__img
+        position: absolute
+        right: 61px
+        top: 40px
+    &__img-mobile
+        display: none
     &__form
         position: absolute
         width: 464px
@@ -124,3 +126,81 @@
             color: #72727d
             text-decoration: none
             border-bottom: 1px solid #ebebef
+
+@media (max-width: 767px)
+    .feedback
+        padding: 60px 0
+        height: auto
+        &__inner
+            flex-wrap: nowrap
+        &__title
+            width: 100%
+            text-align: center
+        &__subtitle
+            width: 100%
+            margin-top: 12px
+            font-size: 15px
+            line-height: 23px
+            letter-spacing: 0.45px
+        &__bonus
+            width: 100%
+            display: flex
+            align-items: center
+            flex-direction: column
+            z-index: -1
+            span 
+                font-size: 15px
+                line-height: 23px
+        &__img
+            display: none
+        &__img-mobile
+            margin-top: 20px
+            display: block
+        &__form
+            margin-top: 20px
+            margin-left: -60px
+            right: auto
+            position: relative
+            width: 375px
+            height: 542px
+            &::before
+                display: none
+    .form
+        padding: 60px 52px
+        &::after
+            width: 137px
+            height: 149px
+            right: -3px
+            top: -70px
+            background: url('../img/form-img-mobile.png') no-repeat 50% 50%
+            background-size: contain
+        &__title
+            font-size: 26px
+            line-height: 26px
+            letter-spacing: -0.16px
+        &__subtitle
+            font-size: 15px
+            line-height: 23px
+            letter-spacing: 0.56px
+        &__input
+            padding-left: 70px
+            width: 266px
+            height: 61px
+            box-shadow: inset 0 2px 12px 1px rgba(58, 62, 64, 0.11)
+            font-size: 13px
+            line-height: 13px
+            margin-bottom: 12px
+        &__icon
+            top: 20px
+            width: 51px
+            height: 20px
+            &_1
+                background-size: 25%
+            &_2
+                background-size: 34%
+        &__btn
+            width: 248px
+        &__desc
+            margin-top: 40px
+            font-size: 11px
+            line-height: 16.16px
