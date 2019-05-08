@@ -2,25 +2,45 @@
     .popup-wrap
         .popup-wrap__close
         //- BEGIN POPUP FORM
-        .popup.popup-form#popup-form
+        form.popup.popup-form#popup-form
             .popup-form__inner
                 .form__title Записаться на вебинар
+                input(type="hidden" name="title" value='Записаться на вебинар').popup-title
                 .form__subtitle В течение 5 минут ты получишь приглашение на вебинар
                 .form__body
-                    label(for="form-name").form__label
+                    label(for="popup-name").form__label
                         span.form__icon.form__icon_1
-                        input(type="text" placeholder="Введите Ваше имя" required).form__input#popup-name
-                    label(for="form-mail").form__label
+                        input(type="text" name='name' placeholder="Введите Ваше имя" required).form__input#popup-name
+                    label(for="popup-mail").form__label
                         span.form__icon.form__icon_2
-                        input(type="email" placeholder="Введите Вашу почту" required).form__input#popup-mail
-                label(for="form-submit").btn.form__btn
+                        input(type="email" name="mail" placeholder="Введите Вашу почту" required).form__input#popup-mail
+                label(for="popup-submit").btn.form__btn
                     input(type="submit"  value="" hidden)#popup-submit
-                    span записаться на бесплатный вебинар
+                    span Записаться на бесплатный вебинар
                 .form__desc Нажимая на кнопку, я соглашаюсь с условиями 
                     |
                     a(href="#").conf политики конфиденциальности
 
         //- END POPUP FORM
+
+        //- BEGIN CALL FORM
+        form.popup.popup-call#popup-call
+            .popup-call__inner
+                .form__title Позвоните мне
+                input(type="hidden" name="title" value='Позвоните мне')
+                .form__subtitle В ближайшее время мы перезвоним
+                .form__body
+                    label(for="popup-phone").form__label
+                        input(type="tel" name="tel" placeholder="Введите Ваш номер" required).form__input.form__input_call#popup-phone
+                label(for="popup-submit-call").btn.form__btn
+                    input(type="submit"  value="" hidden)#popup-submit-call
+                    span Позвоните мне
+                .form__desc Нажимая на кнопку, я соглашаюсь с условиями 
+                    |
+                    a(href="#").conf политики конфиденциальности
+
+        //- END CALL FORM
+
         //- BEGIN POPUP VIDEO
         .popup.popup-video#popup-video
             iframe(id="ytplayer" type="text/html" width="640" height="360"  src=""  frameborder="0")
@@ -56,6 +76,34 @@
                     span Хочу такие же результаты
 
         //- END POPUP MORE
+
+        //- BEGIN POPUP TARIFF MORE 
+        .popup.popup-more-tariff#popup-more-tariff
+            .popup-more-tariff__inner
+                .tariff__item
+                    h3.tariff__name Пакет «Бизнес»
+                    ul.tariff__options
+                        li 10 недель обучения
+                        li Проверка домашних заданий
+                        li Тестирование
+                        li 44 урока
+                        li 11 вебинаров 
+                        li Работа с реальными заявками туристов
+                        li Доступ к закрытому чату Бизнес
+                        li Сертификат
+                    .tariff__price.tariff__price_old 32 990 руб.
+                    .tariff__price 28 900 руб.
+                    a(href="#popup-form").btn.tariff__btn
+                        span Выбрать пакет
+                    .tariff__left Осталось  
+                        | 
+                        span 7  
+                        |
+                        |пакетов по этой цене
+
+
+        //- END POPUP TARIFF MORE
+
         //- BEGIN POPUP THX
         .popup.popup-thx#popup-thx
             .popup-thx__body

@@ -70,19 +70,18 @@
             left: -57px
             top: -34px
             background: url('../img/desc-3.png') no-repeat 50% 50%
-
-@media (max-width: 767px)
+@media (max-width: 1279px)
     .format
-        padding: 60px 0 100px
-        &__title
-            text-align: center
-        &__subtitle
-            margin-top: 8px
-            width: 204px
-            text-align: center
-            font-size: 15px
-            line-height: 23px
-            letter-spacing: 0.45px
+        &__item
+            width: 20%
+            &+.format__item
+                &::before
+                    width: 32px
+            &:nth-child(4)
+                &::before
+                    left: -68px
+@media (max-width: 1023px)
+    .format
         &__items
             margin-top: 0
             flex-direction: column
@@ -95,6 +94,7 @@
                     transform: rotate(90deg)
                     top: -7px
                     left: 50%
+                    width: 66px
                     margin-left: -33px
             &:last-child
                 margin-bottom: 0
@@ -119,12 +119,9 @@
             margin-right: 0
             width: 193px
         &__buttons
-            margin-top: 40px
             display: flex
             flex-direction: column
             align-items: center
-        &__btn
-            width: 263px
         &__desc
             margin-top: 44px
             position: relative
@@ -138,3 +135,20 @@
                 left: -30px
                 top: -23px
                 background: url('../img/desc-1.png') no-repeat 50% 50%
+@media (max-width: 767px)
+    .format
+        padding: 60px 0 100px
+        &__title
+            text-align: center
+        &__subtitle
+            margin-top: 8px
+            width: 204px
+            text-align: center
+            font-size: 15px
+            line-height: 23px
+            letter-spacing: 0.45px
+        
+        &__buttons
+            margin-top: 40px
+        &__btn
+            width: 263px

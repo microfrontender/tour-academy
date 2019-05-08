@@ -12,7 +12,7 @@
         flex-direction: column
         justify-content: flex-end
         align-items: center
-        width: 100%
+        width: 1170px
         height: 760px
     &__woman
         position: relative
@@ -78,17 +78,92 @@
             left: -59px
             top: 9px
             background: url('../img/desc-2.png') no-repeat 50% 50%
-
+@media (max-width: 1279px)
+    .skills
+        &__info
+            font-size: 15px
+            font-weight: 400
+            line-height: 23px
+            margin-left: 0
+            width: 181px
+            margin-top: -15px
+            text-align: center
+        &__item
+            flex-direction: column
+            margin-bottom: 0
+            &_1
+                top: -47px
+                left: 524px
+            &_2
+                top: 77px
+                left: 804px
+            &_3
+                top: 320px
+                left: 879px
+            &_4
+                top: 535px
+                left: 805px
+            &_5
+                top: 493px
+                left: 195px
+            &_6
+                top: 263px
+                left: 123px
+            &_7
+                top: 35px
+                left: 209px
+        &__img
+            width: 100%
+@media (max-width: 1023px)
+    .skills
+        &__items
+            flex-direction: row
+            justify-content: center
+            align-items: baseline
+            height: auto
+            flex-wrap: wrap
+            margin-top: 20px
+            width: 100%
+        &__item
+            width: 50%
+            position: static
+            margin-bottom: 30px
+        &__img
+            width: auto
+        &__woman
+            margin-top: 20px
+            width: 100%
+            order: 2
+        &__buttons
+            display: flex
+            flex-direction: column
+        &__desc
+            margin-top: 40px
+            position: relative
+            top: auto
+            right: -25px
+            letter-spacing: 0px
+            &::before
+                width: 17px
+                height: 44px
+                left: -30px
+                top: -23px
+                background: url('../img/desc-1.png') no-repeat 50% 50%
 @media (max-width: 767px)
     .skills
         padding-top: 5px
         &__title
             text-align: center
         &__items
+            flex-wrap: nowrap
+            align-items: center
+            flex-direction: column
             justify-content: flex-start
             height: auto
             margin-top: 40px
+            width: 100%
         &__item
+            width: auto
             position: static
             flex-direction: column
             margin-bottom: 0
@@ -105,12 +180,8 @@
             height: 335px
             order: 2
         &__info
-            font-size: 15px
-            font-weight: 400
-            line-height: 23px
-            margin-left: 0
-            width: 181px
-            margin-top: -15px
+            text-align: left
+            
         &__buttons
             display: flex
             flex-direction: column

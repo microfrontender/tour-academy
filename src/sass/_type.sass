@@ -68,7 +68,31 @@
         font-weight: 400
         line-height: 26px
         letter-spacing: 0.48px
-
+@media (max-width: 1279px)
+    .type
+        &__item
+            justify-content: flex-start
+        &__img
+            img
+                width: 400px
+            &_1
+                img 
+                    left: -124px
+            &_2
+                img 
+                    left: -50px
+            &_3
+                img 
+                    left: 25px
+@media (max-width: 1023px)
+    .type
+        &__item
+            &:nth-child(2)
+                margin-top: 25px
+                margin-left: auto
+        &__items
+            flex-wrap: wrap
+            justify-content: center
 @media (max-width: 767px)
     .type
         padding: 60px 0 13px
@@ -82,8 +106,8 @@
         &__item
             height: auto
             margin-bottom: 30px
-            &:nth-child(2)
-                margin-top: 0
+            justify-content: space-between
+            
         &__img
             height: 370px
             img

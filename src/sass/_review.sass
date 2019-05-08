@@ -39,6 +39,7 @@
         width: 1235px
         height: 665px
         background: url('../img/review-slider.png') no-repeat 50% 50%
+        background-size: contain
         // z-index: 100
     
     &__nav
@@ -193,6 +194,84 @@
         box-shadow: 0 0 6px rgba(177, 182, 195, 0.41)
         background: url('../img/vk-icon.png') no-repeat 50% 50%
         background-color: #ffffff
+@media (max-width: 1279px)
+    .review
+        &__items
+            width: 1023px
+            margin-top: 0
+        &__item
+            width: 1023px
+            height: 555px
+            padding: 76px 100px 125px 100px
+            align-items: center
+        &__nav
+            top: 258px
+        &__cup
+            right: -371px
+    .r-item
+        &__ifo
+            width: 370px
+        &__video
+            width: 420px
+@media (max-width: 1023px)
+    .review
+        &__air
+            height: 230px
+            top: -203px
+            left: -616px
+        &__cup
+            height: 388px
+            top: 31px
+        &__title
+            width: 100%
+        &__items
+            width: 767px
+        &__item
+            width: 767px
+            height: 433px
+            padding: 60px
+        &__buttons
+            display: flex
+            flex-direction: column
+        &__desc
+            margin-top: 35px
+            position: relative
+            right: auto
+            margin-left: 48px
+            top: auto
+            letter-spacing: 0px
+            &::before
+                width: 17px
+                height: 44px
+                left: -30px
+                top: -23px
+                background: url('../img/desc-1.png') no-repeat 50% 50%
+    .r-item
+        &__info
+            margin-top: 12px
+            width: 315px 
+        &__title
+            font-size: 18px
+            line-height: 26px
+            letter-spacing: -0.09px
+        &__text
+            margin-top: 6px
+            font-size: 13px
+            line-height: 21px
+            letter-spacing: 0.44px
+        &__more
+            margin-top: 12px
+            font-size: 13px
+            line-height: 13px
+        &__video
+            width: 316px
+            height: 239px
+        &__play
+            width: 61px
+            height: 61px
+            box-shadow: none
+        &__autor
+            margin-top: 12px
 
 @media (max-width: 767px)
     .review
@@ -274,6 +353,8 @@
             width: 61px
             height: 61px
             box-shadow: none
+        &__autor
+            margin-top: 36px
     .autor
         height: 84px
         padding-left: 104px

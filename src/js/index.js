@@ -10,6 +10,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'owl.carousel';
 import '../sass/index.sass';
+import Inputmask from "inputmask";
 
 // BEGIN NAVBAR
 
@@ -80,19 +81,36 @@ function openPopup(id){
 
 $('.popup-wrap__close').click(closePopup);
 
-
-$('.btn, .footer__call').click(function(e){
+// main popup form
+$('.btn').click(function(e){
     
     // console.log($(this).attr('href'));
     if($(this).attr('href')){
+        
+        
         e.preventDefault();
         openPopup($(this).attr('href'));
-        $('#popup-form').find('.form__title').html($(this).children('span').html())
+        if($(this).siblings().hasClass('tariff__name')){
+            $('#popup-form').find('.form__title').html($(this).siblings('.tariff__name').html())
+            $('#popup-form').find('.popup-title').val($(this).children('span').html() + ': ' + $(this).siblings('.tariff__name').html())
+        } else{
+            $('#popup-form').find('.form__title').html($(this).children('span').html())
+            $('#popup-form').find('.popup-title').val($(this).children('span').html())
+        }
+       
         $('#popup-form').find('.btn').children('span').html($(this).children('span').html())
         
-    } 
+    } else{
+        return true;
+    }
 });
 
+// call popup
+$('.footer__call').click(function(e){
+    e.preventDefault();
+    openPopup('#popup-call');
+});
+// video popup
 
 $('.r-item__play').click(function(e){
     e.preventDefault();
@@ -100,14 +118,21 @@ $('.r-item__play').click(function(e){
     $('#ytplayer').attr('src', $(this).attr('href'));
 });
 
+// polit conf popup
 $('.conf').click(function(e){
     e.preventDefault();
     openPopup('#popup-polit');
 });
 
+// more popup
 $('.r-item__more').click(function(e){
     e.preventDefault();
     openPopup('#popup-more');
+});
+// more tariff popup
+$('.tariff__more').click(function(e){
+    e.preventDefault();
+    openPopup('#popup-more-tariff');
 });
 // END POPUP
 
@@ -121,3 +146,23 @@ $('.faq__head').click(function(){
 });
 
 // END FAQ
+
+// BEGIN SEND MAIL
+$("#feedback-form, #popup-call, #popup-form").submit(function() {
+    $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(this).serialize()
+    }).done(function() {
+        $("#feedback-form")[0].reset();
+        $("#popup-call")[0].reset();
+        $("#popup-form")[0].reset();
+        openPopup('#popup-thx');
+    });
+    return false;
+  });
+
+// BEGIN END MAIL
+
+var im = new Inputmask("+7 (999) 999-99-99");
+im.mask(document.querySelectorAll("#popup-phone"))

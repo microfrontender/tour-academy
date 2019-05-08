@@ -483,13 +483,14 @@
       <div class="feedback__bonus"> <span>Бонусом мы вышлем тебе чек-листы:</span><img class="feedback__img" src="img/feedback-img.png" alt="Бонусом мы вышлем тебе чек-листы:"><img class="feedback__img-mobile" src="img/feedback-img-mobile.png" alt="Бонусом мы вышлем тебе чек-листы:"></div>
       <form class="feedback__form form" id="feedback-form">
         <div class="form__title">Записаться на вебинар</div>
+        <input type="hidden" name="title" value="Записаться на вебинар">
         <div class="form__subtitle">В течение 5 минут ты получишь приглашение на вебинар</div>
         <div class="form__body">
           <label class="form__label" for="form-name"><span class="form__icon form__icon_1"></span>
-            <input class="form__input" type="text" placeholder="Введите Ваше имя" required id="form-name">
+            <input class="form__input" type="text" name="name" placeholder="Введите Ваше имя" required id="form-name">
           </label>
           <label class="form__label" for="form-mail"><span class="form__icon form__icon_2"></span>
-            <input class="form__input" type="email" placeholder="Введите Вашу почту" required id="form-mail">
+            <input class="form__input" type="email" name="mail" placeholder="Введите Вашу почту" required id="form-mail">
           </label>
         </div>
         <label class="btn btn_comp form__btn" for="form-submit">
@@ -519,25 +520,43 @@
 <div class="overlay">
   <div class="popup-wrap">
     <div class="popup-wrap__close"></div>
-    <div class="popup popup-form" id="popup-form">
+    <form class="popup popup-form" id="popup-form">
       <div class="popup-form__inner">
         <div class="form__title">Записаться на вебинар</div>
+        <input class="popup-title" type="hidden" name="title" value="Записаться на вебинар">
         <div class="form__subtitle">В течение 5 минут ты получишь приглашение на вебинар</div>
         <div class="form__body">
-          <label class="form__label" for="form-name"><span class="form__icon form__icon_1"></span>
-            <input class="form__input" type="text" placeholder="Введите Ваше имя" required id="popup-name">
+          <label class="form__label" for="popup-name"><span class="form__icon form__icon_1"></span>
+            <input class="form__input" type="text" name="name" placeholder="Введите Ваше имя" required id="popup-name">
           </label>
-          <label class="form__label" for="form-mail"><span class="form__icon form__icon_2"></span>
-            <input class="form__input" type="email" placeholder="Введите Вашу почту" required id="popup-mail">
+          <label class="form__label" for="popup-mail"><span class="form__icon form__icon_2"></span>
+            <input class="form__input" type="email" name="mail" placeholder="Введите Вашу почту" required id="popup-mail">
           </label>
         </div>
-        <label class="btn form__btn" for="form-submit">
-          <input type="submit" value="" hidden id="popup-submit"><span>записаться на бесплатный вебинар</span>
+        <label class="btn form__btn" for="popup-submit">
+          <input type="submit" value="" hidden id="popup-submit"><span>Записаться на бесплатный вебинар</span>
         </label>
         <div class="form__desc">
           Нажимая на кнопку, я соглашаюсь с условиями <a class="conf" href="#">политики конфиденциальности</a></div>
       </div>
-    </div>
+    </form>
+    <form class="popup popup-call" id="popup-call">
+      <div class="popup-call__inner">
+        <div class="form__title">Позвоните мне</div>
+        <input type="hidden" name="title" value="Позвоните мне">
+        <div class="form__subtitle">В ближайшее время мы перезвоним</div>
+        <div class="form__body">
+          <label class="form__label" for="popup-phone">
+            <input class="form__input form__input_call" type="tel" name="tel" placeholder="Введите Ваш номер" required id="popup-phone">
+          </label>
+        </div>
+        <label class="btn form__btn" for="popup-submit-call">
+          <input type="submit" value="" hidden id="popup-submit-call"><span>Позвоните мне</span>
+        </label>
+        <div class="form__desc">
+          Нажимая на кнопку, я соглашаюсь с условиями <a class="conf" href="#">политики конфиденциальности</a></div>
+      </div>
+    </form>
     <div class="popup popup-video" id="popup-video">
       <iframe id="ytplayer" type="text/html" width="640" height="360" src="" frameborder="0"></iframe>
     </div>
@@ -562,6 +581,29 @@
         <div class="popup-more__text">
           <p>Товарищи! рамки и место обучения кадров в значительной степени обуславливает создание направлений прогрессивного развития. Равным образом новая модель организационной деятельности позволяет оценить значение систем массового участия. Задача организации, в особенности же реализация намеченных плановых заданий обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия.</p>
         </div><a class="btn popup-more__btn" href="#popup-form"> <span>Хочу такие же результаты</span></a>
+      </div>
+    </div>
+    <div class="popup popup-more-tariff" id="popup-more-tariff">
+      <div class="popup-more-tariff__inner">
+        <div class="tariff__item">
+          <h3 class="tariff__name">Пакет «Бизнес»</h3>
+          <ul class="tariff__options">
+            <li>10 недель обучения</li>
+            <li>Проверка домашних заданий</li>
+            <li>Тестирование</li>
+            <li>44 урока</li>
+            <li>11 вебинаров </li>
+            <li>Работа с реальными заявками туристов</li>
+            <li>Доступ к закрытому чату Бизнес</li>
+            <li>Сертификат</li>
+          </ul>
+          <div class="tariff__price tariff__price_old">32 990 руб.</div>
+          <div class="tariff__price">28 900 руб.</div><a class="btn tariff__btn" href="#popup-form"><span>Выбрать пакет</span></a>
+          <div class="tariff__left">
+            Осталось   <span>7  </span>
+            пакетов по этой цене
+          </div>
+        </div>
       </div>
     </div>
     <div class="popup popup-thx" id="popup-thx">

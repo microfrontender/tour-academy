@@ -84,6 +84,7 @@
             width: 1920px
             height: 983px
             background: url('../img/founder-2.png') no-repeat 50% 50%
+            background-size: contain
         &-info
             position: absolute
             width: 185px
@@ -100,7 +101,50 @@
             font-size: 13px
             line-height: 20px
             letter-spacing: 0.39px  
-
+@media (max-width: 1279px)
+    .advantage
+        &__founder
+            margin-left: -894px
+            top: 328px
+            &-img
+                height: 780px
+            &-info
+                top: -36px
+                right: 662px
+@media (max-width: 1023px)
+    .advantage
+        &__founder
+            margin-left: -934px
+            top: 485px
+            &-img
+                height: 580px
+            &-info
+                top: 54px
+                right: 788px
+            &-name
+                font-size: 16px
+                line-height: 16px
+            &-text
+                font-size: 12px
+        &__buttons
+            display: flex
+            flex-direction: column
+        &__desc
+            margin-top: 35px
+            position: relative
+            right: auto
+            margin-left: 48px
+            top: auto
+            letter-spacing: 0px
+            &::before
+                width: 17px
+                height: 44px
+                left: -30px
+                top: -23px
+                background: url('../img/desc-1.png') no-repeat 50% 50%
+        &__academy
+            width: 760px
+            margin-left: -380px
 @media (max-width: 767px)
     .advantage
         padding: 77px 0 130px
@@ -132,23 +176,8 @@
             margin-left: 0
         &__buttons
             margin-top: 4px
-            display: flex
-            flex-direction: column
         &__btn
             width: 248px
-        &__desc
-            margin-top: 35px
-            position: relative
-            right: auto
-            margin-left: 48px
-            top: auto
-            letter-spacing: 0px
-            &::before
-                width: 17px
-                height: 44px
-                left: -30px
-                top: -23px
-                background: url('../img/desc-1.png') no-repeat 50% 50%
         &__founder
             margin-left: 0
             width: 1474px

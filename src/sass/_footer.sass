@@ -121,6 +121,20 @@
         display: none
     &__soc
         display: none
+@media (max-width: 1279px)
+    .footer
+        &__inst
+            display: none
+        &__phone
+            margin-left: 180px
+            margin-top: 8px
+            margin-bottom: 10px
+@media (max-width: 1023px)
+    .footer
+        &__call
+            display: none
+        &__polit
+            margin-right: 0
 
 @media (max-width: 767px)
     .footer
@@ -130,8 +144,7 @@
         background-size: cover
         &__inner
             flex-direction: column
-        &__call
-            display: none
+        
         &__entity
             display: none
         &__phone
@@ -139,12 +152,12 @@
         &__polit
             margin-top: 17px
             margin-left: 0
+            margin-right: auto
             font-size: 13px
             font-weight: 300
             line-height: 20px
             border-bottom: 1px solid #b3b8c3
-        &__inst
-            display: none
+        
         &__right
             margin-left: 75px
             display: block

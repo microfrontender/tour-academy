@@ -21,7 +21,7 @@
         margin-top: 50px
         margin-bottom: 100px
         display: flex
-        flex-wrap: wrap
+        // flex-wrap: wrap
         justify-content: space-between
     &__item    
         position: relative
@@ -92,7 +92,20 @@
     &__btn
         margin-top: 52px
         width: 279px
-
+@media (max-width: 1279px)
+    .faq
+        &__item
+            width: 456px
+        &__ask            
+            font-size: 16px
+@media (max-width: 1023px)
+    .faq
+        &__items
+            flex-wrap: wrap
+            justify-content: center
+            margin-bottom: 60px
+        &__col
+            margin-bottom: 20px
 @media (max-width: 767px)
     .faq
         padding: 60px 0
@@ -101,10 +114,9 @@
         &__items
             margin-top: 25px
             margin-left: -92px
-            margin-bottom: 60px
+            justify-content: space-between
             // height: auto
-        &__col
-            margin-bottom: 20px
+        
         &__item
             width: 350px
         &__head
@@ -112,7 +124,6 @@
         &__ask
             width: 240px
             padding-left: 40px
-            font-size: 16px
             line-height: 25px
         &__button
             width: 39px

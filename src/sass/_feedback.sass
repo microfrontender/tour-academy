@@ -100,6 +100,8 @@
         font-weight: 400
         line-height: 16px
         outline: unset
+        &_call
+            padding-left: 50px 
     &__icon
         display: block
         position: absolute
@@ -126,16 +128,52 @@
             color: #72727d
             text-decoration: none
             border-bottom: 1px solid #ebebef
-
-@media (max-width: 767px)
+@media (max-width: 1279px)
     .feedback
-        padding: 60px 0
+        &__title
+            width: 515px
+        &__subtitle
+            width: 455px
+            line-height: 24px
+        &__form
+            width: 453px   
+        &__bonus
+            margin-top: 35px
+        &__img
+            right: 231px
+            top: 60px
+            height: 360px
+@media (max-width: 1023px)
+    .feedback      
+        padding-top: 80px  
         height: auto
         &__inner
             flex-wrap: nowrap
+            align-items: center
         &__title
             width: 100%
             text-align: center
+        &__subtitle
+            text-align: center
+            width: 453px
+            margin-top: 12px
+        &__form
+            margin-top: 20px
+            margin-left: 0
+            right: auto
+            position: relative
+        &__bonus
+            width: 453px
+            span 
+                font-size: 16px
+                line-height: 23px
+        &__img
+            right: 79px
+            top: 30px
+            position: relative
+@media (max-width: 767px)
+    .feedback
+        padding: 60px 0      
         &__subtitle
             width: 100%
             margin-top: 12px
@@ -158,7 +196,6 @@
             display: block
         &__form
             margin-top: 20px
-            margin-left: -60px
             right: auto
             position: relative
             width: 375px
@@ -190,6 +227,7 @@
             font-size: 13px
             line-height: 13px
             margin-bottom: 12px
+            
         &__icon
             top: 20px
             width: 51px
