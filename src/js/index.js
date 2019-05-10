@@ -13,7 +13,6 @@ import WOW from 'wowjs';
 import 'animate.css';
 import '../sass/index.sass';
 import Inputmask from "inputmask";
-<<<<<<< HEAD
 
 
 // wow init
@@ -25,8 +24,6 @@ var wow = new WOW.WOW(
     }
   );
 wow.init();
-=======
->>>>>>> c05adb9... Full
 
 // BEGIN NAVBAR
 
@@ -180,7 +177,6 @@ $("#feedback-form, #popup-call, #popup-form").submit(function() {
 
 // BEGIN END MAIL
 
-<<<<<<< HEAD
 // phone mask
 var im = new Inputmask("+7 (999) 999-99-99");
 im.mask(document.querySelectorAll("#popup-phone"))
@@ -193,7 +189,3 @@ $(".nav__link").on("click", function (event) {
         top = $(id).offset().top;
     $('body,html').animate({scrollTop: top}, 500);
 });
-=======
-var im = new Inputmask("+7 (999) 999-99-99");
-im.mask(document.querySelectorAll("#popup-phone"))
->>>>>>> c05adb9... Full
