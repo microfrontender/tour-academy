@@ -8,6 +8,7 @@ section.feedback#feedback
                 
                 img(src=require('../../img/feedback-img.png'), alt="Бонусом мы вышлем тебе чек-листы:").feedback__img
                 img(src=require('../../img/feedback-img-mobile.png'), alt="Бонусом мы вышлем тебе чек-листы:").feedback__img-mobile
+<<<<<<< HEAD
             div.feedback__wrap.wow.fadeInRight.slow(data-wow-offset='100')
                 form.feedback__form.form#feedback-form
                     .form__title Записаться на вебинар
@@ -26,3 +27,22 @@ section.feedback#feedback
                     .form__desc Нажимая на кнопку, я соглашаюсь с условиями 
                         |
                         a(href="#").conf политики конфиденциальности
+=======
+            form.feedback__form.form#feedback-form
+                .form__title Записаться на вебинар
+                input(type="hidden" name="title" value='Записаться на вебинар')
+                .form__subtitle В течение 5 минут ты получишь приглашение на вебинар
+                .form__body
+                    label(for="form-name").form__label
+                        span.form__icon.form__icon_1
+                        input(type="text" name="name" placeholder="Введите Ваше имя" required).form__input#form-name
+                    label(for="form-mail").form__label
+                        span.form__icon.form__icon_2
+                        input(type="email" name="mail" placeholder="Введите Вашу почту" required).form__input#form-mail
+                label(for="form-submit").btn.btn_comp.form__btn
+                    input(type="submit"  value="" hidden)#form-submit
+                    span записаться на бесплатный вебинар
+                .form__desc Нажимая на кнопку, я соглашаюсь с условиями 
+                    |
+                    a(href="#").conf политики конфиденциальности
+>>>>>>> c05adb9... Full
