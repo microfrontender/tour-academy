@@ -63,12 +63,13 @@
     &__btn
         width: 288px
     &__desc
+        // font-family: 'SF Pro Display'
         position: absolute
         right: -331px
         top: 12px
         width: 232px
         font-size: 13px
-        font-weight: 400
+        font-weight: inherit
         line-height: 21px
         &::before
             position: absolute
@@ -78,11 +79,20 @@
             left: -59px
             top: 9px
             background: url('../img/desc-2.png') no-repeat 50% 50%
+    &__bird
+        position: absolute
+        top: -64px
+        right: -156px
+        width: 210px
+        height: 254px
+        background: url('../img/about-bird.png') no-repeat 50% 50%
+        background-size: contain
+
 @media (max-width: 1279px)
     .skills
         &__info
             font-size: 15px
-            font-weight: 400
+            font-weight: inherit
             line-height: 23px
             margin-left: 0
             width: 181px
@@ -149,6 +159,10 @@
                 left: -30px
                 top: -23px
                 background: url('../img/desc-1.png') no-repeat 50% 50%
+        &__bird
+            height: 150px
+            top: -17px
+            right: -175px
 @media (max-width: 767px)
     .skills
         padding-top: 5px
@@ -199,3 +213,5 @@
                 left: -30px
                 top: -23px
                 background: url('../img/desc-1.png') no-repeat 50% 50%
+        &__bird
+            display: none

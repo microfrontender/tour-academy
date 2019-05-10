@@ -1,12 +1,23 @@
+// @keyframes fadeInRightCustom
+//     from 
+//         opacity: 0
+//         transform: translate(100%)
+//     to 
+//         opacity: 1
+//         transform: translate(0)
+// .fadeInRightCustom
+//     animation-name: fadeInRightCustom
+//     animation-fill-mode: backwards !important
 .feedback
     padding-top: 97px
     padding-bottom: 60px
-    height: 800px
+    height: 780px
     &__inner
         position: relative
         display: flex
         flex-wrap: wrap
         flex-direction: column
+        z-index: 10
     &__title
         margin-top: 37px
         width: 700px
@@ -24,7 +35,7 @@
             display: inline-block
             width: 210px
             font-size: 18px
-            font-weight: 400
+            font-weight: inherit
             line-height: 28px
             letter-spacing: 0.52px 
     &__img
@@ -36,17 +47,19 @@
     &__form
         position: absolute
         width: 464px
-        height: 645px
+        height: 607px
         top: 0
         right: -10px
         box-shadow: 0 3px 18px rgba(137, 137, 152, 0.21)
         border-radius: 20px
         background-color: #f7f7fb
+        // z-index: 1
+        
         &::before
             position: absolute
             content: ''
             width: 442px
-            height: 655px
+            height: 600px
             left: 10px
             border-radius: 20px
             background-color: #f7f7fb
@@ -61,7 +74,14 @@
             top: 131px
             background: url('../img/form-img.png') no-repeat 50% 50%
             z-index: -1
-
+    &__wrap
+        position: absolute
+        top: 0
+        right: 0
+        left: 0
+        bottom: 0
+        z-index: -1
+  
 .form
     display: flex
     flex-direction: column
@@ -78,7 +98,7 @@
         margin-top: 10px
         text-align: center
         font-size: 16px
-        font-weight: 400
+        font-weight: inherit
         line-height: 24px
         letter-spacing: 0.48px
     &__body
@@ -97,7 +117,7 @@
         border: none
         color: #72727d
         font-size: 16px
-        font-weight: 400
+        font-weight: inherit
         line-height: 16px
         outline: unset
         &_call
@@ -121,7 +141,7 @@
         color: #72727d
         margin-top: 37px
         text-align: center
-        font-weight: 300
+        font-weight: inherit
         font-size: 13px
         line-height: 20px
         a 
@@ -171,6 +191,9 @@
             right: 79px
             top: 30px
             position: relative
+            z-index: -1
+        &__wrap
+            position: static
 @media (max-width: 767px)
     .feedback
         padding: 60px 0      

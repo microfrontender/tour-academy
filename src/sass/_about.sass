@@ -1,7 +1,7 @@
 .about
-    background: url('../img/about-bg.png') no-repeat 50% 100%
+    background: url('../img/about-bg.png') no-repeat 50% 73%
     background-color: #fff
-    background-size: cover
+    
     height: 1054px
     padding-top: 180px
     &__inner
@@ -12,9 +12,10 @@
     &__founder
         position: absolute
         left: 36px
-        top: 97px
+        top: -83px
         width: 510px
         height: 1140px
+        z-index: 1
         &-info
             position: absolute
             width: 185px
@@ -25,7 +26,7 @@
         &-name
             font-size: 20px
             line-height: 21px
-            font-weight: 500
+            font-weight: 600
         &-text
             margin-top: 5px
             font-size: 13px
@@ -34,15 +35,16 @@
     &__subtitle
         margin-top: 22px
         font-size: 18px
-        font-weight: 400
+        font-weight: inherit
         line-height: 18px
         letter-spacing: 0.54px
     &__quote
-        width: 400px
+        width: 390px
         position: relative
         margin-top: 40px
         margin-left: 30px
-        font-weight: 400
+        line-height: 24px
+        font-weight: inherit
         color: #5b5b5b
         &::before
             position: absolute
@@ -58,22 +60,23 @@
             width: 17px
             height: 13px
             bottom: -33px
-            right: 0
+            right: 10px
             background: url('../img/quote-2.png') no-repeat 50% 50%
         p+p 
-            margin-top: 35px
+            margin-top: 30px
     &__buttons
-        margin-top: 70px
+        margin-top: 76px
         position: relative
     &__btn
         width: 288px
     &__desc
+        // font-family: 'SF Pro Display'
         position: absolute
         right: -57px
-        top: 22px
+        top: 18px
         width: 232px
         font-size: 13px
-        font-weight: 400
+        font-weight: inherit
         line-height: 21px
         &::before
             position: absolute
@@ -81,14 +84,16 @@
             width: 44px
             height: 11px
             left: -60px
-            top: -15px
+            top: -4px
             background: url('../img/desc-2.png') no-repeat 50% 50%
+    
 @media (max-width: 1279px)
     .about
+        background-size: cover
         &__inner
             padding-left: 415px
         &__founder
-            left: 12px
+            left: -7px
             top: 117px
             img
                 height: 930px
@@ -127,7 +132,7 @@
                 top: 97px
             &-text 
                 font-size: 12px
-                font-weight: 400
+                font-weight: inherit
                 line-height: 18px
                 letter-spacing: 0.47px
         &__quote
@@ -169,7 +174,7 @@
                 top: 77px
             &-text 
                 font-size: 12px
-                font-weight: 400
+                font-weight: inherit
                 line-height: 18px
                 letter-spacing: 0.47px
         &__subtitle

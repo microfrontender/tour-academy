@@ -2,7 +2,7 @@
     position: relative
     overflow: hidden
     background: url('../img/banner-bg.png') no-repeat 50% 0
-    background-size: cover
+    // background-size: 148%
     height: 868px
     
     &__inner
@@ -26,19 +26,20 @@
         max-width: 588px
         margin-top: 18px
         font-size: 18px
-        font-weight: 400
+        font-weight: inherit
         line-height: 27px
         letter-spacing: 0.54px
     &__btn
         margin-top: 35px
         width: 330px
     &__desc
+        // font-family: 'SF Pro Display'
         margin-top: 35px
         margin-left: 123px
         position: relative
         width: 232px
         font-size: 13px
-        font-weight: 400
+        font-weight: inherit
         line-height: 21px
         &::before
             position: absolute
@@ -59,7 +60,7 @@
         &::after
             position: absolute
             content: ''
-            bottom: -938px
+            bottom: -925px
             right: -340px
             width: 2074px
             height: 1192px
@@ -69,6 +70,7 @@
 
 @media (max-width: 1279px)
     .banner
+        background-size: cover
         &__woman
             right: -222px
             height: 623px
@@ -102,7 +104,7 @@
             background-color: #fbcb58
         &__subtitle
             font-size: 15px
-            font-weight: 400
+            font-weight: inherit
             line-height: 23px
             letter-spacing: 0.45px
             width: 242px

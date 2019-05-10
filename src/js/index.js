@@ -9,8 +9,21 @@ import 'reset-css';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'owl.carousel';
+import WOW from 'wowjs';
+import 'animate.css';
 import '../sass/index.sass';
 import Inputmask from "inputmask";
+
+
+// wow init
+
+var wow = new WOW.WOW(
+    {    
+      mobile:       false, 
+      resetAnimation: true
+    }
+  );
+wow.init();
 
 // BEGIN NAVBAR
 
@@ -164,5 +177,15 @@ $("#feedback-form, #popup-call, #popup-form").submit(function() {
 
 // BEGIN END MAIL
 
+// phone mask
 var im = new Inputmask("+7 (999) 999-99-99");
 im.mask(document.querySelectorAll("#popup-phone"))
+
+
+// nav animate
+$(".nav__link").on("click", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 500);
+});
